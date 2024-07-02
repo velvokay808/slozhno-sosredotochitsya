@@ -91,7 +91,7 @@
   line-height: 82.5%;
   text-shadow: 2px 2px 0px var(--title-color-sub-effect);
   color: var(--title-color-effect);
-  margin-block-end: 17px;
+  margin-block-end: 19px;
 }
 
 .info-container-href:focus {
@@ -219,8 +219,8 @@
     line-height: 23.4px;
     grid-column: 2;
     grid-row: 3;
-    margin-inline-end: 20px;
-    margin-block-start: 22px;
+    margin-inline-end: 19px;
+    margin-block-start: 23px;
   }
 
   .header_rec_point {
