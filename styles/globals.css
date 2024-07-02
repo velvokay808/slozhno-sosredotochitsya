@@ -40,3 +40,7 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.page {
+  font-family: var(--main-font), Arial, sans-serif;
+}
