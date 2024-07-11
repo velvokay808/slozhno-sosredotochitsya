@@ -5,82 +5,31 @@
 */
 
 .page.theme_light {
-  background: url('/images/cover-image-light.png'), var(--background-main-color);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-
-.theme_light {
-  --background-main-color: #FFF1F7;
-  --background-second-color: #FF8DCB;
-  --title-color-effect: #FFC2E6;
-  --title-color-sub-effect: #FF0070;
-  --text-menu-color: #353430;
-  --text-title-color: #353430;
-  --text-description-color: #353430;
-  --text-main-color: #353430;
-  --hover-color: #353430;
-  --main-font-family: "IBM Plex Mono", 'monospace';
-  --footer-title-sub-low-effect: #FF8DCB;
-  --decorate-color: #353430;
-  --text-subtitle-color: #353430;
+  --bg-color: #fff1f7;
+  --main-color: #ffc2e6;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --shadow-color: #FF0070;
+  --button-color: #353430;
+  --button-hover-color: #32312d66;
+  --hover-color: #32312d66;
+  --title-decor-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
+  --rec-display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
-    background: url('/images/cover-image-light.png'), var(--background-main-color);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .theme_auto {
-    --background-main-color: #FFF1F7;
-    --background-second-color: #FF8DCB;
-    --title-color-effect: #FFC2E6;
-    --title-color-sub-effect: #FF0070;
-    --text-menu-color: #353430;
-    --text-title-color: #353430;
-    --text-description-color: #353430;
-    --text-main-color: #353430;
-    --hover-color: #353430;
-    --main-font-family: "IBM Plex Mono", 'monospace';
-    --footer-title-sub-low-effect: #FF8DCB;
-    --decorate-color: #353430;
-    --text-subtitle-color: #353430;
-  }
-
-  .header_rec_point {
-    display: none;
-  }
-
-  .theme_dark>.header>.header_rec_point {
-    display: block;
-  }
-}
-
-.header_rec_point {
-  display: none;
-}
-
-@media (1024px >=width) {
-  .header_title {
-    text-shadow: 4px 4px 0px var(--title-color-sub-effect);
-  }
-
-  .footer_title {
-    text-shadow: 2px 2px 0px var(--title-color-sub-effect);
-  }
-}
-
-@media (width < 1024px) {
-  .header_title {
-    text-shadow: 4px 4px 0px var(--footer-title-sub-low-effect);
-  }
-
-  .footer_title {
-    text-shadow: 2px 2px 0px var(--footer-title-sub-low-effect);
+  :root {
+      --bg-color: #fff1f7;
+      --main-color: #ffc2e6;
+      --text-color: #353430;
+      --accent-color: #FF8DCB;
+      --shadow-color: #FF0070;
+      --button-color: #353430;
+      --button-hover-color: #32312d66;
+      --hover-color: #32312d66;
+      --title-decor-color: #353430;
+      --bg-image: url(../images/cover-image-light.png);
+      --rec-display: none;
   }
 }

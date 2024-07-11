@@ -5,57 +5,18 @@
 */
 
 .page.theme_dark {
-  background: url('/images/cover-image-dark.png'), var(--background-main-color);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-.theme_dark {
-  --background-main-color: #000028;
-  --background-second-color: #FF0070;
-  --title-color-effect: #DB00FF;
-  --title-color-sub-effect: #FF0070;
-  --decorate-color: #FF0070;
-  --text-menu-color: #FF0070;
-  --text-title-color: #FF0070;
-  --text-description-color: #000028;
-  --text-subtitle-color: #000028;
-  --text-main-color: #F1B2CE;
-  --hover-color: #FF0070;
-  --camera-point-color: #FF0070;
-  --footer-title-sub-low-effect: #FF0070;
-}
-
-@media (prefers-color-scheme: dark) {
-  .page.theme_auto {
-    background: url('/images/cover-image-dark.png'), var(--background-main-color);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .theme_auto {
-    --background-main-color: #000028;
-    --background-second-color: #FF0070;
-    --title-color-effect: #DB00FF;
-    --title-color-sub-effect: #FF0070;
-    --decorate-color: #FF0070;
-    --text-menu-color: #FF0070;
-    --text-title-color: #FF0070;
-    --text-description-color: #000028;
-    --text-subtitle-color: #000028;
-    --text-main-color: #F1B2CE;
-    --hover-color: #FF0070;
-    --camera-point-color: #FF0070;
-    --footer-title-sub-low-effect: #FF0070;
-  }
-
-  .header_rec_point {
-    display: block;
-  }
-
-  .theme_light>.header>.header_rec_point {
-    display: none;
-  }
+  --bg-color: #000028;
+  --main-color: #db00ff;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --shadow-color: #ff0070;
+  --button-color: #ff0070;
+  --button-hover-color: #ff007066;
+  --hover-color: #ff007066;
+  --title-decor-color: #000028;
+  --main-font: "IBM Plex mono", monospace;
+  --title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --bg-image: url(../images/cover-image-dark.png);
+  --rec-display: block;
 }
