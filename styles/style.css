@@ -163,12 +163,12 @@
   margin: 40px 0;
 }
 
-.main__section  {
+.main__section {
   display: grid;
   gap: 20px;
 }
 
-.pic  {
+.pic {
   gap: 10px;
 }
 
