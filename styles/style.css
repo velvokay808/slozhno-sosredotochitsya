@@ -88,6 +88,7 @@
   line-height: 1.38889;
   color: var(--accent-color);
   display: var(--rec-display);
+  text-transform: uppercase;
 }
 
 .header__rec::before {
@@ -100,7 +101,7 @@
   block-size: 9px;
   inline-size: 9px;
   background-color: var(--accent-color);
-  box-shadow: 0 0 4px 3px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -162,29 +163,33 @@
   margin: 40px 0;
 }
 
-.main__section {
+.main__section-why,.main__section-what,.main__section-how {
   display: grid;
   gap: 20px;
 }
 
-.main__title {
+.main__section-pic {
+  display: grid;
+  gap: 10px;
+}
+
+.main__title-why,.main__title-what,.main__title-how {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
   color: var(--button-color);
 }
 
-.main__section:nth-child(4) {
-  gap: 10px;
+.main__title-pic {
+  font-size: 18px;
 }
 
 .main__section-subparagraphs {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
 }
 
-.main__list {
+.main__list-why,.main__list-what,.main__list-how {
   display: grid;
   gap: 20px;
 }
@@ -268,24 +273,16 @@
       margin: 60px 0;
   }
 
-  .main__section:not(:last-child) {
-      grid-template-columns: 1fr 2fr;
+  .main__section-why,.main__section-how { 
+    grid-template-columns: 236px 2fr;
   }
 
-  .main__section:nth-child(2) .main__title {
-      grid-column: 1;
+  .main__title-why,.main__title-what,.main__title-how {
+    width: 236px;
   }
 
-  .main__section:nth-child(2) .main__list {
-      grid-column: 1 / 3;
-  }
-
-  .main__section-subparagraphs {
-      grid-column: 2 / 3;
-  }
-
-  .main__section:nth-child(4) {
-      gap: 20px;
+  .main__section-pic {
+    gap: 20px;
   }
 
   .main__gallery-list {
@@ -336,21 +333,21 @@
       min-block-size: 768px;
   }
 
-  .main__section:not(:last-child) {
-      grid-template-columns: 1fr 1fr 1fr;
+  .main__section-why,.main__section-how {
+  grid-template-columns: 314.96px 2fr;
   }
 
-  .main__section:nth-child(1) .main__list {
-      grid-column: 2 / 4;
+  .main__list-what {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .main__section:nth-child(2) .main__list {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column: 1 / 4;
-  }
+  .main__title-why,.main__title-what,.main__title-how {
+    width: 315px;
+  }  
 
-  .main__section-subparagraphs {
-      grid-column: 2 / 4;
+  .main__section-pic {
+  display: grid;
+  gap: 20px;
   }
 
   .header__theme-menu {
